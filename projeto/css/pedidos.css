@@ -1,35 +1,57 @@
-body {
+
+.body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     margin: 0;
     padding: 0;
 }
-h2 {
+.h2 {
     text-align: center;
     margin-top: 20px;
     color: #333;
 }
+.table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+height: 100%; /* Agora a altura da tabela será igual à altura total disponível */
+overflow-y: auto; /* Adiciona scroll vertical se a tabela ficar muito grande */
+}
+
+/* Estilo para centralizar o texto e ajustar o layout das células */
+.th, .td {
+padding: 20px;
+text-align: center; /* Centraliza o texto horizontalmente */
+border-bottom: 1px solid #ddd;
+vertical-align: middle; /* Centraliza o texto verticalmente */
+}
+
+/* Estilo para ajustar a largura da tabela em telas menores */
+@media only screen and (max-width: 600px) {
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+font-size: 14px; /* Reduz o tamanho da fonte da tabela em telas menores */
 }
-th, td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+td:nth-child(5) {
+font-size: 14px; /* Reduz o tamanho do texto da data em telas menores */
 }
-th {
+}
+.th {
     background-color: #f2f2f2;
 }
-tr:nth-child(even) {
+.tr:nth-child(even) {
     background-color: #f9f9f9;
 }
-tr:hover {
+.tr:hover {
     background-color: #f2f2f2;
 }
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
+}
+/* Estilo para tornar o texto da data maior em telas menores */
+@media only screen and (max-width: 600px) {
+    td:nth-child(5) {
+        font-size: 18px; /* Ajuste o tamanho do texto conforme necessário */
+    }
 }

@@ -1,0 +1,325 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+body {
+  margin: 0;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  place-items: center;
+  background-color: blue;
+  z-index: 2;
+}
+.logo {
+  font-family: smooch;
+  color: white;
+  font-size: 2.2em;
+}
+.header nav button {
+  background-color: transparent;
+  border: 0;
+  font-family: quicksand;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition-delay: 0s;
+  transition-duration: 1s;
+}
+.header nav button:hover {
+  color: yellowgreen;
+  transform: translate(0px, -4px);
+  text-shadow: 0 6px 6px rgba(0, 0, 0, 1);
+}
+.order-online {
+ width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  background-color: white;
+  color: black;
+  font-family: montserrat;
+  cursor: pointer;
+  transition: 0.6s;
+  
+}.order-onlinee {
+  margin-left: 450px;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  background-color: white;
+  color: black;
+  font-family: montserrat;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.order-online:hover {
+  transform: translate(0px, -4px);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* WAVES BENEATH HEADER */
+
+.waves {
+  transform: rotate(180deg) scale(1, 0.2);
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+  margin-top: 53px;
+}
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 4s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 17s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+.input-group {
+  padding-left: 200px; /* Espaçamento à esquerda */
+  padding-right: 239px; /* Espaçamento à direita */
+  display: flex;
+  justify-content: space-between; /* Para distribuir os elementos igualmente */
+  max-height: 10rem;
+}
+
+.input-box {
+  flex: 0 1 auto; /* Para que cada campo de entrada ocupe a mesma largura */
+  margin-right: 1rem; /* Espaço entre os campos de entrada */
+  text-align: start; /* Alinhar o conteúdo à esquerda */
+  font-family: montserrat; /* Definir a fonte */
+  cursor: pointer;
+}
+
+.input-box input {
+  margin: 0.6rem 0; /* Espaçamento interno */
+  padding: 0.8rem 1.2rem; /* Preenchimento interno */
+  border: none; /* Remover borda */
+  border-radius: 10px; /* Arredondar as bordas */
+  box-shadow: 1px 1px 6px #0000001c; /* Adicionar sombra */
+  font-size: 0.8rem; /* Tamanho da fonte */
+  width: 100%; /* Para ocupar toda a largura do contêiner pai */
+}
+
+.container {
+  width: 68.6%;
+  padding: 0.1px;
+  border-radius: 10px; /* Arredonda as bordas */
+    background-color: #FFC0CB; 
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 200px; /* Espaço lateral à esquerda */
+    margin-right: 200px;
+  }
+  body {
+    font-family: Arial, sans-serif; /* Define a fonte desejada para todo o corpo do documento */
+    background-color: #e8e6e9;
+  }
+.input-boxx{
+  flex: 0.3; /* Para que cada campo de entrada ocupe a mesma largura */
+    margin-right: 1rem; /* Espaço entre os campos de entrada */
+    text-align: start; /* Centralizar o conteúdo */
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    font-family: montserrat;
+    cursor: pointer;
+    padding-top: 10px;
+    margin-left: 200px;
+   
+
+}
+.input-boxxx input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+    width: 88%; /* Para ocupar toda a largura do contêiner pai */
+}
+
+#procedures,
+#clinical_requests {
+  box-shadow: 1px 1px 6px #0000001c;
+  margin: 0.6rem 0;
+  width: 96%; /* Define a largura como 50% do espaço disponível, considerando o espaço para preenchimento */
+  padding: 8px; /* Adiciona preenchimento interno para melhorar a aparência */
+  border-radius: 10px; /* Arredonda as bordas */
+  border: 1px solid white; /* Adiciona uma borda para delinear o elemento */
+  box-sizing: border-box; /* Garante que o preenchimento e a borda não aumentem a largura total */
+  background-color: white;
+}
+
+.input-groupp {
+ 
+  padding-left: 30px; /* Espaçamento à esquerda */
+  padding-right: 200px; /* Espaçamento à direita */
+  display: flex;
+  justify-content: space-around; /* Para distribuir os elementos igualmente */
+  max-height: 10rem;
+   /* Adicione isso se desejar que haja uma barra de rolagem quando necessário */
+} 
+
+
+.input-groupp {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 200px;
+}
+.input-groupp .input-box {
+  flex: 1; /* Para que cada campo de entrada ocupe o mesmo espaço */
+}
+.input-boxxx {
+  flex: 1; /* Para que cada campo de entrada ocupe o mesmo espaço */
+  margin-right: 1rem; /* Espaço entre os campos de entrada */
+  text-align: start; /* Alinhamento do texto à esquerda */
+  font-family: Arial, sans-serif; /* Definir a fonte */
+}
+
+.input-box input,
+.input-boxxx input {
+  margin: 0.6rem 0; /* Espaçamento interno */
+  padding: 0.8rem 1.2rem; /* Preenchimento interno */
+  border: 1px solid #ccc; /* Adiciona uma borda para delinear o elemento */
+  border-radius: 8px; /* Arredonda as bordas */
+  box-sizing: border-box; /* Garante que o preenchimento e a borda não aumentem a largura total */
+  width: 82%; /* Para ocupar toda a largura do contêiner pai */
+}
+
+.input-groupp {
+  display: flex;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.input-grouppp .input-box {
+  flex: 1; /* Para que cada campo de entrada ocupe o mesmo espaço */
+}
+
+
+.input-boxxxx {
+  flex: 1; /* Para que cada campo de entrada ocupe o mesmo espaço */
+  margin-right: 1rem; /* Espaço entre os campos de entrada */
+  text-align: start; /* Alinhamento do texto à esquerda */
+  font-family: Arial, sans-serif; /* Definir a fonte */
+}
+
+.input-box input,
+.input-boxxxx input {
+  margin: 0.6rem 0; /* Espaçamento interno */
+  padding: 0.8rem 1.2rem; /* Preenchimento interno */
+  border: 1px solid #ccc; /* Adiciona uma borda para delinear o elemento */
+  border-radius: 8px; /* Arredonda as bordas */
+  box-sizing: border-box; /* Garante que o preenchimento e a borda não aumentem a largura total */
+  width: 100%; /* Para ocupar toda a largura do contêiner pai */
+}
+
+.input-grouppp {
+  display: flex;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.input-grouppp .input-box {
+  flex: 1; /* Para que cada campo de entrada ocupe o mesmo espaço */
+}
+
+.containerr {
+    width: 68.6%;
+    padding: 0.1px;
+    border-radius: 10px; /* Arredonda as bordas */
+    background-color: #FFC0CB; 
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 200px; /* Espaço lateral à esquerda */
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-between; /* Para alinhar os elementos nas extremidades */
+    align-items: center; /* Para alinhar verticalmente */
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+
+  .button[type="submit"] {
+    background-color: blue; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remover borda */
+    border-radius: 5px; /* Arredondar as bordas */
+    cursor: pointer; /* Alterar cursor ao passar por cima */
+  }
+  .input-box select {
+    box-shadow: 1px 1px 6px #0000001c;
+  margin: 0.6rem 0;
+  width: 96%; /* Define a largura como 50% do espaço disponível, considerando o espaço para preenchimento */
+  padding: 8px; /* Adiciona preenchimento interno para melhorar a aparência */
+  border-radius: 10px; /* Arredonda as bordas */
+  border: 1px solid white; /* Adiciona uma borda para delinear o elemento */
+  box-sizing: border-box; /* Garante que o preenchimento e a borda não aumentem a largura total */
+  background-color: white; /* Garante que o preenchimento e a borda não aumentem a largura total */
+}
+
+.input-box select:focus {
+    /* Estilo quando o campo de seleção está em foco */
+    outline: none; /* Remove o contorno padrão */
+    border-color: blue; /* Altera a cor da borda quando em foco */
+}
+
+.input-box select option {
+    /* Estilo das opções do menu suspenso */
+    padding: 8px; /* Espaçamento interno */
+    border-bottom: 1px solid #ccc; /* Adiciona uma linha entre as opções */
+}
+
+.input-box select option:last-child {
+    /* Remove a borda inferior da última opção */
+    border-bottom: none;
+}
+footer {
+    background-color: blue; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Alinhamento centralizado */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+    position: fixed; /* Fixar o footer na parte inferior da tela */
+    left: 0; /* Alinhar à esquerda */
+    bottom: 0; /* Alinhar na parte inferior */
+    width: 100%; /* Ocupar toda a largura da tela */
+    /* Ocupar toda a altura menos o espaço reservado para o padding */
+    box-sizing: border-box; /* Incluir padding e bordas na altura e largura */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Centralizar o conteúdo horizontalmente */
+    align-items: center; /* Centralizar o conteúdo verticalmente */
+}
