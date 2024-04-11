@@ -71,7 +71,7 @@ Após isto o ambiente está pronto para os testes.
 Como executar os testes para este sistema.
 
 Verifique em:
-../model/send_data e ../model/solicitacao_request.php o direcionamento para o banco está correto.
+../model/acess.php o direcionamento para o seu banco se está correto.
 
 ```
 $servername = "localhost";
