@@ -1,50 +1,14 @@
-
 <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $database = "sitcon";
-        $port = "3312";
-
-        $conn = new mysqli($servername, $username, $password, $database, $port);
-
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
-
-        $stmt = $conn->prepare("INSERT INTO sitcondados (patient_name, birthdate, professional, request_type, request_date, clinical_requests, cpf, procedures, time) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("sssssssss", $patient_name, $birthdate, $professional, $request_type, $request_date, $clinical_requests, $cpf, $procedures, $time);
-
-        $patient_name = $_POST['patient_name'];
-        $birthdate = $_POST['birthdate'];
-        $professional = $_POST['professional'];
-        $request_type = $_POST['request_type'];
-        $request_date = $_POST['request_date'];
-        $clinical_requests = $_POST['clinical_requests'];
-        $cpf = $_POST['cpf'];
-        $procedures = $_POST['procedures'];
-        $time = $_POST['time'];
-
-        $stmt->execute();
-
-        echo "New records created successfully";
-
-        $stmt->close();
-        $conn->close();
-		header("Location: includes/solicitação.php");
-        exit();
-    }
-    ?>
- 
+ include 'model/send_data.php';
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animated Wavy Header</title>
+    <title>Sitcon</title>
     <link rel="stylesheet" href="css/initial.css">
 </head>
 
@@ -55,7 +19,7 @@
         </h1>
         
         <button class="order-onlinee">Solicitações Clínicas</button>
-        <button class="order-online">Lista de Consultas"</button>
+        <button class="order-online"><a href="includes/solicitação.php" target="_blank"style="color: white; text-decoration: none;">Lista de Consultas</a></button>
     </header>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
     <div>
@@ -104,24 +68,24 @@
     <label for="clinical_requests">Solicitações Clínicas</label>
                 <select id="clinical_requests" name="clinical_requests" required>
                     <option value="">Selecione</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
+                    <option value="Exemplo 1 ">Exemplo 1</option>
+                    <option value="Exemplo 2">Exemplo 2</option>
                 </select>
     </div>
     <div class="input-box ">
     <label for="type_requests">Tipo de solicitação</label>
                 <select id="request_type" name="request_type" required>
                     <option value="">Selecione</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
+                    <option value="Exemplo 1">Exemplo 1</option>
+                    <option value="Exemplo 2">Exemplo 2</option>
                 </select>
     </div>
     <div class="input-box">
     <label for="procedures">Procedimentos</label>
                 <select id="procedures" name="procedures" required>
                     <option value="">Selecione</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
+                    <option value="Exemplo 1">Exemplo 1</option>
+                    <option value="Exemplo 2">Exemplo 2</option>
                 </select>
     </div>           
     </div>

@@ -1,12 +1,15 @@
-# Título do projeto
+# Teste Alef-Sitcon projeto
 
-Um parágrafo da descrição do projeto vai aqui
+Trata-se de um projeto completamente funcional, que está integrado de forma coesa e depende integralmente de um banco de dados para armazenar e extrair informações de maneira eficaz e organizada.
+Todas as informações encontram-se abaixo.
 
 ## 🚀 Começando
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
 ![alt text](/projeto/assets/image.png)
+![alt text](/projeto/assets/image-1.png)
+
 
 ### 📋 Pré-requisitos
 
@@ -53,13 +56,16 @@ CREATE TABLE sitcon (
 );
 
 ```
+![phpmyadmin](/projeto/assets/image-2.png)
 
 Após isto o ambiente está pronto para os testes.
 
 ## ⚙️ Executando os testes
 
-Explicar como executar os testes automatizados para este sistema.
-Verifique se no main.php o direcionamento para o banco está correto.
+Como executar os testes para este sistema.
+
+Verifique em:
+../model/send_data e ../model/solicitacao_request.php o direcionamento para o banco está correto.
 
 ```
 $servername = "localhost";
@@ -68,7 +74,7 @@ $password = "";
 $database = "sitcon";
 port = "3312";
 ```
-Como pode ver rodo na porta 3312 e as informaçãoes de acesso do meu banco.
+Como pode ver eu utilizo a porta 3312 e as informaçãoes de acesso do meu banco.
 
 Concluido:
 
@@ -98,6 +104,9 @@ Clique em Salvar após isto.
 Agora os Dados foram enviados ao Banco de Dados e Retornados na pagina seguinte.
 
 As informaçãoes depende totalmente do banco de dados, Tanto exibir como salva-las.
+
+Caso ajá algum error não exite em me contatar: 
+Email - Alefjanuario900@gmail.com
 
 
 ## 🛠️ Construído com
