@@ -47,7 +47,7 @@ Nome: sitcon.
 
 Agora crie a tabela : 
 ```
-CREATE TABLE sitcon (
+CREATE TABLE sitcondados (
     id INT AUTO_INCREMENT PRIMARY KEY,
     patient_name VARCHAR(255) NOT NULL,
     birthdate DATE NOT NULL,
