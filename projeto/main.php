@@ -68,24 +68,28 @@ include 'model/send_data.php';
                     <label for="clinical_requests">Solicitações Clínicas</label>
                     <select id="clinical_requests" name="clinical_requests" required>
                         <option value="">Selecione</option>
-                        <option value="Exemplo 1 ">Exemplo 1</option>
-                        <option value="Exemplo 2">Exemplo 2</option>
+                        <option value="Atendimento">Atendimento</option>
+                        <option value="Agendamento">Agendamento</option>
                     </select>
                 </div>
                 <div class="input-box ">
                     <label for="type_requests">Tipo de solicitação</label>
                     <select id="request_type" name="request_type" required>
                         <option value="">Selecione</option>
-                        <option value="Exemplo 1">Exemplo 1</option>
-                        <option value="Exemplo 2">Exemplo 2</option>
+                        <option value="Consulta">Consulta</option>
+                        <option value="Exames Laboratoriais">Exames Laboratoriais</option>
                     </select>
                 </div>
                 <div class="input-box">
                     <label for="procedures">Procedimentos</label>
                     <select id="procedures" name="procedures" required>
                         <option value="">Selecione</option>
-                        <option value="Exemplo 1">Exemplo 1</option>
-                        <option value="Exemplo 2">Exemplo 2</option>
+                        <option value="Consulta Pediátrica">Consulta Pediátrica</option>
+                        <option value="Consulta Clínico Geral">Consulta Clínico Geral</option>
+                        <option value="Hemograma">Hemograma</option>
+                        <option value="Glicemia">Glicemia</option>
+                        <option value="Colesterol">Colesterol</option>
+                        <option value="Triglicerídeos">Triglicerídeos</option>
                     </select>
                 </div>
             </div>

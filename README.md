@@ -9,6 +9,7 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 ![alt text](/projeto/assets/image.png)
 ![alt text](/projeto/assets/image-1.png)
+![alt text](/projeto/assets/image-4.png)
 
 
 ### 📋 Pré-requisitos
