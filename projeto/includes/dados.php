@@ -1,5 +1,5 @@
 <?php
- include '../model/dados_request.php';
+include '../model/dados_request.php';
 ?>
 
 <!DOCTYPE html>
@@ -17,12 +17,11 @@
         <h1 class="logo">
             Alef - sitcon
         </h1>
-        <button class="order-onlinee"><a href="../main.php" target="_blank"style="color: white; text-decoration: none;">Solicitações Clínicas</a></button>
-        <button class="order-online"><a href="../includes/solicitação.php" target="_blank"style="color: white; text-decoration: none;">Lista de Consultas</a></button>
+        <button class="order-onlinee"><a href="../main.php" target="_blank" style="color: white; text-decoration: none;">Solicitações Clínicas</a></button>
+        <button class="order-online"><a href="../includes/solicitação.php" target="_blank" style="color: white; text-decoration: none;">Lista de Consultas</a></button>
     </header>
     <div>
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
                 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
             </defs>
@@ -40,7 +39,7 @@
             <label for="patient_name">Nome do Paciente</label>
             <input type="text" id="patient_name" name="patient_name" value="<?php echo isset($_GET['patient_name']) ? $_GET['patient_name'] : ''; ?>" readonly>
         </div>
-        
+
         <div class="input-box">
             <label for="birthdate">Data de Nascimento</label>
             <input type="text" id="birthdate" name="birthdate" value="<?php echo isset($_GET['birthdate']) ? $_GET['birthdate'] : ''; ?>" readonly>
@@ -85,7 +84,7 @@
                     <label for="request_date">Data</label>
                     <input type="text" id="request_date" name="request_date" value="<?php echo isset($_GET['request_date']) ? $_GET['request_date'] : ''; ?>" readonly>
                 </div>
-            
+
                 <div class="input-box">
                     <label for="time">Hora</label>
                     <input type="text" id="time" name="time" value="<?php echo isset($_GET['time']) ? $_GET['time'] : ''; ?>" readonly>
@@ -100,22 +99,22 @@
         </div>
     </footer>
 
-<script>
-// Função para formatar o CPF conforme o usuário digita
-document.getElementById('cpf').addEventListener('input', function (e) {
-  var cpf = e.target.value.replace(/\D/g, ''); // Remove caracteres não numéricos
-  if (cpf.length > 3) {
-    cpf = cpf.substring(0, 3) + '.' + cpf.substring(3); // Adiciona o primeiro ponto após os 3 primeiros dígitos
-  }
-  if (cpf.length > 7) {
-    cpf = cpf.substring(0, 7) + '.' + cpf.substring(7); // Adiciona o segundo ponto após os 6 primeiros dígitos
-  }
-  if (cpf.length > 11) {
-    cpf = cpf.substring(0, 11) + '-' + cpf.substring(11); // Adiciona o hífen após os 9 primeiros dígitos
-  }
-  e.target.value = cpf; // Atualiza o valor do campo de entrada
-});
-</script>
+    <script>
+        // Função para formatar o CPF conforme o usuário digita
+        document.getElementById('cpf').addEventListener('input', function(e) {
+            var cpf = e.target.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+            if (cpf.length > 3) {
+                cpf = cpf.substring(0, 3) + '.' + cpf.substring(3); // Adiciona o primeiro ponto após os 3 primeiros dígitos
+            }
+            if (cpf.length > 7) {
+                cpf = cpf.substring(0, 7) + '.' + cpf.substring(7); // Adiciona o segundo ponto após os 6 primeiros dígitos
+            }
+            if (cpf.length > 11) {
+                cpf = cpf.substring(0, 11) + '-' + cpf.substring(11); // Adiciona o hífen após os 9 primeiros dígitos
+            }
+            e.target.value = cpf; // Atualiza o valor do campo de entrada
+        });
+    </script>
 </body>
 
 </html>

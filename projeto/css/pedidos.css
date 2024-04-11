@@ -2,9 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
 body {
   margin: 0;
 }
+
 header {
   position: fixed;
   width: 100%;
@@ -15,11 +17,13 @@ header {
   background-color: blue;
   z-index: 2;
 }
+
 .logo {
   font-family: smooch;
   color: white;
   font-size: 2.2em;
 }
+
 .header nav button {
   background-color: transparent;
   border: 0;
@@ -31,26 +35,29 @@ header {
   transition-delay: 0s;
   transition-duration: 1s;
 }
+
 .header nav button:hover {
   color: yellowgreen;
   transform: translate(0px, -4px);
   text-shadow: 0 6px 6px rgba(0, 0, 0, 1);
 }
+
 .order-online,
 .order-onlinee {
   margin-left: 600px;
-  display: inline-block; 
+  display: inline-block;
   width: 200px;
   height: 40px;
   border-radius: 20px;
-  border: 2px solid white; 
-  background-color: transparent; 
-  color: white; 
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
   font-family: montserrat;
   cursor: pointer;
   transition: 0.6s;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
+
 .order-online:hover {
   transform: translate(0px, -4px);
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
@@ -61,109 +68,117 @@ header {
   position: relative;
   width: 100%;
   height: 10vh;
-  margin-bottom: -25px; 
+  margin-bottom: -25px;
   min-height: 100px;
   max-height: 150px;
   margin-top: 53px;
 }
-.parallax > use {
+
+.parallax>use {
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
-.parallax > use:nth-child(1) {
+
+.parallax>use:nth-child(1) {
   animation-delay: -2s;
   animation-duration: 4s;
 }
-.parallax > use:nth-child(2) {
+
+.parallax>use:nth-child(2) {
   animation-delay: -3s;
   animation-duration: 7s;
 }
-.parallax > use:nth-child(3) {
+
+.parallax>use:nth-child(3) {
   animation-delay: -4s;
   animation-duration: 10s;
 }
-.parallax > use:nth-child(4) {
+
+.parallax>use:nth-child(4) {
   animation-delay: -5s;
   animation-duration: 17s;
 }
+
 @keyframes move-forever {
   0% {
     transform: translate3d(-90px, 0, 0);
   }
+
   100% {
     transform: translate3d(85px, 0, 0);
   }
 }
-  body {
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+
+body {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 * {
-    font-family: montserrat;
+  font-family: montserrat;
 }
 
 .content-table {
-    border-collapse: collapse;
-    margin: 25px auto;
-    font-size: 1em;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-collapse: collapse;
+  margin: 25px auto;
+  font-size: 1em;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 .content-table thead tr {
-    background-color: blue;
-    color: #ffffff;
-    text-align: left;
-    font-weight: bold;
+  background-color: blue;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
 }
 
 .content-table th,
 .content-table td {
-    padding: 12px 15px;
+  padding: 12px 15px;
 }
 
 .content-table tbody tr {
-    border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 
 .content-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+  background-color: #f3f3f3;
 }
 
 .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid blue;
+  border-bottom: 2px solid blue;
 }
 
 .content-table tbody tr.active-row {
-    font-weight: bold;
-    color: blue;
+  font-weight: bold;
+  color: blue;
 }
 
 .button-cell {
-    text-align: center;
-    font-family: Montserrat;
+  text-align: center;
+  font-family: Montserrat;
 }
 
 .button {
-    padding: 8px 12px;
-    background-color: blue;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 8px 12px;
+  background-color: blue;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .container {
-    text-align: center; 
-    margin: 0 auto; 
-    padding: 0 20px;
-    max-width: 100%; 
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 768px) {
-    .content-table {
-        width: 100%;
-    }
+  .content-table {
+    width: 100%;
+  }
 }

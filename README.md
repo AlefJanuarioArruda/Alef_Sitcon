@@ -13,34 +13,39 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 ### 📋 Pré-requisitos
 
-De que coisas você precisa para instalar o software e como instalá-lo?
+Pronto para instalar ? Aqui estão os elementos essenciais que você vai precisar.
 
 ```
+Vscode.
 Ambiente configurado - Php.
-Open Php - Vscode.
+Extensão Open Php/html/js in browser - Vscode.
 Xampp.
-Adicionar arquivo do projeto dentro do htdocs xampp.
+Adicionar arquivo do projeto dentro do htdocs no xampp.
 ```
 
-### 🔧 Instalação
+### 🔧 Configuração
 
 Primeiramente Iremos iniciar nosso projeto e configurar nosso Banco para receber os dados.
+
 Nessa etapa :
 
-Inicie Xampp Control Paneel.
-Starte Apache e MySQL.
+Abra Xampp Control Paneel.
 
-Tudo dando certo
+Inicie Apache e MySQL.
+
+Tudo dando certo.
+
 Inicie No navegador Web : 
 ```
 http://localhost/phpmyadmin
 
 ```
 
-E Crie um novo banco com:
+Crie um novo Banco de Dados com:
 
 Nome: sitcon.
-Agora crie uma tabela : 
+
+Agora crie a tabela : 
 ```
 CREATE TABLE sitcon (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -78,8 +83,10 @@ Como pode ver eu utilizo a porta 3312 e as informaçãoes de acesso do meu banco
 
 Concluido:
 
-Agora no arquivo main.php : 
+Agora no arquivo main.php: 
+
 Clique com o botão esquerdo em Open PHP/HTML/Js in browser.
+
 Execute o projeto.
 
 ### 🔩 Analise os testes de ponta a ponta
