@@ -38,24 +38,24 @@ header {
   text-shadow: 0 6px 6px rgba(0, 0, 0, 1);
 }
 .order-online {
- width: 200px;
-  height: 40px;
-  border-radius: 20px;
-  border: 0;
-  background-color: white;
-  color: black;
-  font-family: montserrat;
-  cursor: pointer;
-  transition: 0.6s;
-  
-}.order-onlinee {
-  margin-left: 450px;
   width: 200px;
   height: 40px;
   border-radius: 20px;
-  border: 0;
-  background-color: white;
-  color: black;
+  border: 2px solid white; 
+  background-color: transparent; 
+  color: white; 
+  font-family: montserrat;
+  cursor: pointer;
+  transition: 0.6s;
+}.order-onlinee {
+  
+  margin-left: 490px;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid white; 
+  background-color: transparent; 
+  color: white; 
   font-family: montserrat;
   cursor: pointer;
   transition: 0.6s;
@@ -72,7 +72,7 @@ header {
   position: relative;
   width: 100%;
   height: 15vh;
-  margin-bottom: -7px; /*Fix for safari gap*/
+  margin-bottom: -7px; 
   min-height: 100px;
   max-height: 150px;
   margin-top: 53px;
@@ -105,49 +105,48 @@ header {
   }
 }
 .input-group {
-  padding-left: 200px; /* Espaçamento à esquerda */
-  padding-right: 239px; /* Espaçamento à direita */
+  padding-left: 200px; 
+  padding-right: 239px; 
   display: flex;
-  justify-content: space-between; /* Para distribuir os elementos igualmente */
+  justify-content: space-between; 
   max-height: 10rem;
 }
 
 .input-box {
-  flex: 0 1 auto; /* Para que cada campo de entrada ocupe a mesma largura */
-  margin-right: 1rem; /* Espaço entre os campos de entrada */
-  text-align: start; /* Alinhar o conteúdo à esquerda */
-  font-family: montserrat; /* Definir a fonte */
+  flex: 0 1 auto; 
+  margin-right: 1rem; 
+  text-align: start; 
+  font-family: montserrat; 
   cursor: pointer;
 }
 
 .input-box input {
-  margin: 0.6rem 0; /* Espaçamento interno */
-  padding: 0.8rem 1.2rem; /* Preenchimento interno */
-  border: none; /* Remover borda */
-  border-radius: 10px; /* Arredondar as bordas */
-  box-shadow: 1px 1px 6px #0000001c; /* Adicionar sombra */
-  font-size: 0.8rem; /* Tamanho da fonte */
-  width: 100%; /* Para ocupar toda a largura do contêiner pai */
+  margin: 0.6rem 0; 
+  padding: 0.8rem 1.2rem; 
+  border: none; 
+  border-radius: 10px; 
+  box-shadow: 1px 1px 6px #0000001c; 
+  font-size: 0.8rem; 
+  width: 100%; 
 }
 
 .container {
-  width: 68.6%;
   padding: 0.1px;
-  border-radius: 10px; /* Arredonda as bordas */
-    background-color: #FFC0CB; 
-    margin: 0 auto;
-    text-align: center;
-    margin-left: 200px; /* Espaço lateral à esquerda */
-    margin-right: 200px;
+  border-radius: 10px; 
+  background-color: #FFC0CB; 
+  margin: 0 auto;
+  text-align: center;
+  margin-left: 200px; 
+  margin-right: 255px;
   }
   body {
-    font-family: Arial, sans-serif; /* Define a fonte desejada para todo o corpo do documento */
+    font-family: Arial, sans-serif; 
     background-color: #e8e6e9;
   }
 .input-boxx{
-  flex: 0.3; /* Para que cada campo de entrada ocupe a mesma largura */
-    margin-right: 1rem; /* Espaço entre os campos de entrada */
-    text-align: start; /* Centralizar o conteúdo */
+  flex: 0.3; 
+    margin-right: 1rem; 
+    text-align: start; 
     display: flex;
     flex-direction: column;
     align-items: normal;
@@ -155,6 +154,7 @@ header {
     cursor: pointer;
     padding-top: 10px;
     margin-left: 200px;
+    margin-right: 240px;
    
 
 }
@@ -165,29 +165,29 @@ header {
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
     font-size: 0.8rem;
-    width: 88%; /* Para ocupar toda a largura do contêiner pai */
+   
 }
 
 #procedures,
 #clinical_requests {
   box-shadow: 1px 1px 6px #0000001c;
   margin: 0.6rem 0;
-  width: 96%; /* Define a largura como 50% do espaço disponível, considerando o espaço para preenchimento */
-  padding: 8px; /* Adiciona preenchimento interno para melhorar a aparência */
-  border-radius: 10px; /* Arredonda as bordas */
-  border: 1px solid white; /* Adiciona uma borda para delinear o elemento */
-  box-sizing: border-box; /* Garante que o preenchimento e a borda não aumentem a largura total */
+  width: 96%; 
+  padding: 8px; 
+  border-radius: 10px; 
+  border: 1px solid white; 
+  box-sizing: border-box; 
   background-color: white;
 }
 
 .input-groupp {
  
-  padding-left: 30px; /* Espaçamento à esquerda */
-  padding-right: 200px; /* Espaçamento à direita */
+  padding-left: 30px; 
+  padding-right: 200px; 
   display: flex;
-  justify-content: space-around; /* Para distribuir os elementos igualmente */
+  justify-content: space-around; 
   max-height: 10rem;
-   /* Adicione isso se desejar que haja uma barra de rolagem quando necessário */
+   
 } 
 
 
@@ -197,51 +197,51 @@ header {
   padding-right: 200px;
 }
 .input-groupp .input-box {
-  flex: 1; /* Para que cada campo de entrada ocupe o mesmo espaço */
+  flex: 1; 
 }
 .input-boxxx {
-  flex: 1; /* Para que cada campo de entrada ocupe o mesmo espaço */
-  margin-right: 1rem; /* Espaço entre os campos de entrada */
-  text-align: start; /* Alinhamento do texto à esquerda */
-  font-family: Arial, sans-serif; /* Definir a fonte */
+  flex: 1; 
+  margin-right: 1rem; 
+  text-align: start; 
+  font-family: Arial, sans-serif;
 }
 
 .input-box input,
 .input-boxxx input {
-  margin: 0.6rem 0; /* Espaçamento interno */
-  padding: 0.8rem 1.2rem; /* Preenchimento interno */
-  border: 1px solid #ccc; /* Adiciona uma borda para delinear o elemento */
-  border-radius: 8px; /* Arredonda as bordas */
-  box-sizing: border-box; /* Garante que o preenchimento e a borda não aumentem a largura total */
-  width: 82%; /* Para ocupar toda a largura do contêiner pai */
+  margin: 0.6rem 0; 
+  padding: 0.8rem 1.2rem; 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  box-sizing: border-box; 
+ 
 }
 
 .input-groupp {
   display: flex;
   padding-left: 200px;
-  padding-right: 200px;
+  padding-right: 210px;
 }
 
 .input-grouppp .input-box {
-  flex: 1; /* Para que cada campo de entrada ocupe o mesmo espaço */
+  flex: 1; 
 }
 
 
 .input-boxxxx {
-  flex: 1; /* Para que cada campo de entrada ocupe o mesmo espaço */
-  margin-right: 1rem; /* Espaço entre os campos de entrada */
-  text-align: start; /* Alinhamento do texto à esquerda */
-  font-family: Arial, sans-serif; /* Definir a fonte */
+  flex: 1; 
+  margin-right: 1rem;
+  text-align: start; 
+  font-family: Arial, sans-serif;
 }
 
 .input-box input,
 .input-boxxxx input {
-  margin: 0.6rem 0; /* Espaçamento interno */
-  padding: 0.8rem 1.2rem; /* Preenchimento interno */
-  border: 1px solid #ccc; /* Adiciona uma borda para delinear o elemento */
-  border-radius: 8px; /* Arredonda as bordas */
-  box-sizing: border-box; /* Garante que o preenchimento e a borda não aumentem a largura total */
-  width: 100%; /* Para ocupar toda a largura do contêiner pai */
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem; 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  box-sizing: border-box; 
+  width: 100%; 
 }
 
 .input-grouppp {
@@ -251,75 +251,75 @@ header {
 }
 
 .input-grouppp .input-box {
-  flex: 1; /* Para que cada campo de entrada ocupe o mesmo espaço */
+  flex: 1; 
 }
 
 .containerr {
-    width: 68.6%;
+    
     padding: 0.1px;
-    border-radius: 10px; /* Arredonda as bordas */
+    border-radius: 10px;
     background-color: #FFC0CB; 
     margin: 0 auto;
     text-align: center;
-    margin-left: 200px; /* Espaço lateral à esquerda */
-    margin-right: 200px;
+    margin-left: 200px; 
+    margin-right: 210px;
     display: flex;
-    justify-content: space-between; /* Para alinhar os elementos nas extremidades */
-    align-items: center; /* Para alinhar verticalmente */
+    justify-content: space-between; 
+    align-items: center; 
     padding: 10px;
     background-color: #f0f0f0;
+    margin-bottom: 100px;
   }
 
   .button[type="submit"] {
-    background-color: blue; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    padding: 10px 20px; /* Espaçamento interno */
-    border: none; /* Remover borda */
-    border-radius: 5px; /* Arredondar as bordas */
-    cursor: pointer; /* Alterar cursor ao passar por cima */
+    background-color: blue;
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
   }
   .input-box select {
     box-shadow: 1px 1px 6px #0000001c;
   margin: 0.6rem 0;
-  width: 96%; /* Define a largura como 50% do espaço disponível, considerando o espaço para preenchimento */
-  padding: 8px; /* Adiciona preenchimento interno para melhorar a aparência */
-  border-radius: 10px; /* Arredonda as bordas */
-  border: 1px solid white; /* Adiciona uma borda para delinear o elemento */
-  box-sizing: border-box; /* Garante que o preenchimento e a borda não aumentem a largura total */
-  background-color: white; /* Garante que o preenchimento e a borda não aumentem a largura total */
+  width: 96%; 
+  padding: 8px; 
+  border-radius: 10px; 
+  border: 1px solid white; 
+  box-sizing: border-box; 
+  background-color: white; 
 }
 
 .input-box select:focus {
-    /* Estilo quando o campo de seleção está em foco */
-    outline: none; /* Remove o contorno padrão */
-    border-color: blue; /* Altera a cor da borda quando em foco */
+  
+    outline: none; 
+    border-color: blue; 
 }
 
 .input-box select option {
-    /* Estilo das opções do menu suspenso */
-    padding: 8px; /* Espaçamento interno */
-    border-bottom: 1px solid #ccc; /* Adiciona uma linha entre as opções */
+   
+    padding: 8px; 
+    border-bottom: 1px solid #ccc; 
 }
 
 .input-box select option:last-child {
-    /* Remove a borda inferior da última opção */
+   
     border-bottom: none;
 }
 footer {
-    background-color: blue; /* Cor de fundo do footer */
-    color: #fff; /* Cor do texto */
-    text-align: center; /* Alinhamento centralizado */
-    padding: 20px 0; /* Espaçamento interno superior e inferior */
-    position: fixed; /* Fixar o footer na parte inferior da tela */
-    left: 0; /* Alinhar à esquerda */
-    bottom: 0; /* Alinhar na parte inferior */
-    width: 100%; /* Ocupar toda a largura da tela */
-    /* Ocupar toda a altura menos o espaço reservado para o padding */
-    box-sizing: border-box; /* Incluir padding e bordas na altura e largura */
+    background-color: blue; 
+    color: #fff;
+    text-align: center; 
+    padding: 20px 0;
+    position: fixed; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 .footer-content {
-    display: flex;
-    justify-content: center; /* Centralizar o conteúdo horizontalmente */
-    align-items: center; /* Centralizar o conteúdo verticalmente */
+    
+    justify-content: center; 
+    align-items: center; 
 }
